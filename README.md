@@ -4,4 +4,4 @@
 
 Επιμέλεια: Δημοσθένης Σταλίδης (2025)
 
-Πιέστε εδώ
+Πιέστε  [εδώ](https://demosthenesst.github.io/holocaust/main.html).
