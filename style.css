@@ -99,6 +99,7 @@ h1 {
   background-color: transparent;
   margin: 0;
   color: white;
+  color: var(--mygrey);
   font-size: 4rem;
   width: 100%;
   position: absolute;
