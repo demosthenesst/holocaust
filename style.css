@@ -82,8 +82,8 @@ nav>ul>li:first-child {
   justify-content: space-between;
 }
 
-#contents>ul{
-  padding-left: 1rem;
+#contents>ul {
+  padding-inline: 1rem;
 }
 
 #contents>ul ul{
@@ -184,6 +184,12 @@ h4 {
   padding-inline: 3rem;        
 }
 
+
+#sources>ul {
+  padding-inline: 1rem;
+}
+
+
 #sources li {
   margin-block: 0.7rem;
 } 
@@ -234,6 +240,10 @@ footer p {
     width: 2rem;
     padding: 0;
   }
+
+  #sources>ul, #contents>ul {
+    padding-inline: 0rem;
+  }
 }
 
 @media (orientation: portrait){
@@ -241,5 +251,7 @@ footer p {
     top: 10rem;
     font-size: 150%;
   }
+
+
 }
 
