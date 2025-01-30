@@ -19,7 +19,6 @@ body {
   right: 1rem;
   color: var(--mygrey);
   font-size: 1.5rem;
-  background-color: black;
   background-color: var(--photo-brown);
   border: none;
   outline: none;
@@ -28,6 +27,7 @@ body {
   justify-content: center;
   align-self: center;
   aspect-ratio: 1;
+  width: 2.5rem;
   border-radius: 50%;
   line-height: 0.5;
   cursor: pointer;
@@ -248,8 +248,7 @@ footer p {
 
   #menu-button {
     font-size: 1rem;
-    width: 2rem;
-    padding: 0.5rem;
+    width: 1.7rem;
   }
 }
 
