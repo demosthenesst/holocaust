@@ -93,7 +93,7 @@ nav>ul>li:first-child {
 }
 
 #contents li {
-  margin-block: 0.5rem;
+  margin-block: 0.2rem;
 }
 
 #contents a {
@@ -109,6 +109,7 @@ nav>ul>li:first-child {
 
 .section-tag {
   color: #9d1c1c !important;
+  font-size: 1rem;
 }
 
 section {
@@ -192,10 +193,11 @@ h4 {
 
 #sources li {
   margin-block: 0.7rem;
+  font-size: 90%;
 } 
 
 #sources a {
-  color:mediumblue;
+  color:rgb(10, 10, 160);
   font-weight: 500;
 }
 
