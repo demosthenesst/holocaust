@@ -18,13 +18,15 @@ body {
   top: 1rem;
   right: 1rem;
   color: var(--mygrey);
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: black;
   background-color: var(--photo-brown);
   border: none;
   outline: none;
-  padding: 0.5rem;
-  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
   aspect-ratio: 1;
   border-radius: 50%;
   line-height: 0.5;
@@ -184,11 +186,9 @@ h4 {
   padding-inline: 3rem;        
 }
 
-
 #sources>ul {
   padding-inline: 1rem;
 }
-
 
 #sources li {
   margin-block: 0.7rem;
@@ -235,12 +235,6 @@ footer p {
     padding: 0.3rem 1rem;
   }
 
-  #menu-button {
-    font-size: 1.2rem;
-    width: 2rem;
-    padding: 0;
-  }
-
   #sources>ul, #contents>ul {
     padding-inline: 0rem;
   }
@@ -252,6 +246,10 @@ footer p {
     font-size: 150%;
   }
 
-
+  #menu-button {
+    font-size: 1rem;
+    width: 2rem;
+    padding: 0.5rem;
+  }
 }
 
