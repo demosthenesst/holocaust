@@ -17,22 +17,22 @@ body {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  color: var(--mygrey);
-  font-size: 1.5rem;
-  background-color: var(--photo-brown);
   border: none;
   outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
+  background-color: var(--photo-brown);
+  color: var(--mygrey);
+  font-size: clamp(1.1rem, 0.7rem + 1.6vw, 1.6rem);
   aspect-ratio: 1;
-  width: 2.5rem;
   border-radius: 50%;
   line-height: 0.5;
   cursor: pointer;
   box-shadow: 0px 0px 15px 0px var(--mygrey);
   z-index: 2;
+}
+
+#menu-button>i {
+  display: block;
+  margin: 0.2rem;
 }
 
 #menu-button:active {
@@ -96,7 +96,7 @@ nav>ul>li:first-child {
   margin-block: 0.2rem;
 }
 
-#contents a {
+#contents a:not(.section-tag) {
   color:var(--photo-brown);
   text-decoration: underline;
   font-weight: 500;
@@ -104,12 +104,17 @@ nav>ul>li:first-child {
 }
 
 .content-tag {
-  font-size: 90%;
+  font-size: clamp(0.8rem, 0.68rem + 0.64vw, 1rem);
 }
 
 .section-tag {
-  color: #9d1c1c !important;
-  font-size: 1rem;
+  color: #9d1c1c;
+  font-size: clamp(1.1rem, 0.98rem + 0.64vw, 1.2rem);
+  font-weight: 500;
+}
+
+#contents>ul>li:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 section {
@@ -124,12 +129,12 @@ section {
 
 h1 {
   font-family: "Dela Gothic One", "Ubuntu", Arial, sans-serif;
-  letter-spacing: 10px;
+  letter-spacing: clamp(0.25rem, -0.2188rem + 1.5vw, 0.625rem);
   text-align: center;
   background-color: transparent;
   margin: 0;
   color: white;
-  font-size: 4rem;
+  font-size: clamp(1.5rem, -0.2857rem + 6.8571vw, 4rem);
   width: 100%;
   position: absolute;
   top: 50%;
@@ -143,7 +148,7 @@ h1>span {
 }
 
 h1>span:last-child {
-  font-size: 80%;
+  font-size: 85%;
 }
 
 #photo-container {
@@ -167,11 +172,13 @@ h2 {
   padding: 0;
   margin: 0;
   color: #9d1c1c;
+  font-size: clamp(1.1rem, 0.98rem + 0.64vw, 1.3rem);
   letter-spacing: 3px;
 }
 
 h3 {
-  letter-spacing: 2px;
+  font-size: clamp(0.9rem, 0.68rem + 0.64vw, 1.2rem);
+  letter-spacing: 1px;
   background-color: var(--photo-brown);
   color: var(--mygrey);
   padding: 0.7rem 1rem;
@@ -184,6 +191,7 @@ h4 {
 }
 
 .answer {
+  font-size: clamp(0.9rem, 0.68rem + 0.64vw, 1.2rem);
   padding-inline: 3rem;        
 }
 
@@ -193,7 +201,7 @@ h4 {
 
 #sources li {
   margin-block: 0.7rem;
-  font-size: 90%;
+  font-size: clamp(0.8rem, 0.68rem + 0.64vw, 1rem);  
 } 
 
 #sources a {
@@ -217,23 +225,19 @@ footer p {
   max-width: 500px;
 }
 
+/* media queries */
+
 @media (max-width: 800px) {
   
-  h1 {
-    font-size: 250%;
-    letter-spacing: 6px;
-  } 
-
   section {
     padding: 0.5rem;
   }
 
   .answer {
-    padding-inline: 0.5rem;        
+    padding-inline: 1rem;       
   }
 
   h3 {
-    font-size: 90%;
     padding: 0.3rem 1rem;
   }
 
@@ -244,13 +248,8 @@ footer p {
 
 @media (orientation: portrait){
   h1 {
-    top: 10rem;
-    font-size: 150%;
-  }
-
-  #menu-button {
-    font-size: 1rem;
-    width: 1.7rem;
+    top: 20%;
+    transform: translate(-50%, -40%);
   }
 }
 
